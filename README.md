@@ -1,5 +1,3 @@
-# Org1nelove
-A tool for exploring our own potential
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -114,7 +112,7 @@ A tool for exploring our own potential
         <!-- Intro Video -->
         <div class="intro-video">
             <h2>Welcome to Quantum Orgonite</h2>
-            <iframe width="560" height="315" src="(https://m.youtube.com/watch?v=9nD1s4VPKk8&pp=0gcJCccJAYcqIYzv) frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://m.youtube.com/watch?v=9nD1s4VPKk8" frameborder="0" allowfullscreen></iframe>
             <p>Discover the power of anandamide, the bliss molecule, and our quantum orgonite products.</p>
         </div>
 
@@ -148,7 +146,6 @@ A tool for exploring our own potential
                                     <img src="pyramid4.jpg" alt="Pyramid 4">
                                     <p>Energy Pyramid: Boosts prana flow with quantum materials.</p>
                                 </div>
-                                <!-- Add more pyramid products as needed -->
                             </div>
                         </div>
                         <div class="product-grid">
@@ -174,7 +171,6 @@ A tool for exploring our own potential
                                     <img src="necklace1.jpg" alt="Necklace 1">
                                     <p>Quantum Necklace: Enhances energy flow with monoatomic gold.</p>
                                 </div>
-                                <!-- Add more necklaces -->
                             </div>
                             <div class="view-all">View All Necklaces</div>
                         </div>
@@ -186,7 +182,6 @@ A tool for exploring our own potential
                                     <img src="bracelet1.jpg" alt="Bracelet 1">
                                     <p>Healing Bracelet: Balances chi with colloidal silver.</p>
                                 </div>
-                                <!-- Add more bracelets -->
                             </div>
                             <div class="view-all">View All Bracelets</div>
                         </div>
@@ -198,7 +193,6 @@ A tool for exploring our own potential
                                     <img src="ring1.jpg" alt="Ring 1">
                                     <p>Energy Ring: Aligns prana with nascent iodine.</p>
                                 </div>
-                                <!-- Add more rings -->
                             </div>
                             <div class="view-all">View All Rings</div>
                         </div>
@@ -211,7 +205,6 @@ A tool for exploring our own potential
                                 <img src="handheld1.jpg" alt="Handheld 1">
                                 <p>Quantum Wand: Channels life force energy for meditation.</p>
                             </div>
-                            <!-- Add more handhelds -->
                         </div>
                         <div class="view-all">View All Handhelds</div>
                     </div>
@@ -258,7 +251,6 @@ A tool for exploring our own potential
                             <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
                             <p>Video on Wilhelm Reich’s orgone energy discoveries.</p>
                         </div>
-                        <!-- Add more videos -->
                     </div>
                     <div class="view-all">View All Videos</div>
                 </div>
@@ -273,7 +265,6 @@ A tool for exploring our own potential
                         <div class="product-item">
                             <p>Experiment 1: Test orgonite’s effect on plant growth.</p>
                         </div>
-                        <!-- Add more experiments -->
                     </div>
                     <div class="view-all">View All Experiments</div>
                 </div>
@@ -288,7 +279,6 @@ A tool for exploring our own potential
                             <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID4" frameborder="0" allowfullscreen></iframe>
                             <p>Basic orgonite creation tutorial.</p>
                         </div>
-                        <!-- Add more videos -->
                     </div>
                     <div class="view-all">View All Tutorials</div>
                     <div class="sub-accordion-content hidden">
@@ -307,7 +297,6 @@ A tool for exploring our own potential
                             <img src="user1.jpg" alt="User 1">
                             <p>John Doe: "This pyramid transformed my meditation practice!"</p>
                         </div>
-                        <!-- Add more testimonials -->
                     </div>
                     <div class="view-all">View All Testimonials</div>
                 </div>
@@ -408,13 +397,42 @@ A tool for exploring our own potential
             const formData = new FormData(e.target);
             const resultDiv = document.getElementById('guidance-result');
             resultDiv.style.display = 'block';
-            resultDiv.innerHTML = `
-                <p><strong>Need:</strong> Based on your input, we recommend a Quantum Pyramid to address ${formData.get('need')}.</p>
-                <p><strong>Want:</strong> To achieve ${formData.get('want')}, try our Healing Necklace.</p>
-                <p><strong>Fear:</strong> To overcome ${formData.get('fear')}, use the Balance Handheld daily.</p>
-                <p><strong>Past Failures:</strong> Since ${formData.get('past')} didn’t work, our products offer a quantum approach.</p>
-                <p><strong>Desired Outcome:</strong> For ${formData.get('outcome')}, we suggest starting with a Quantum Pyramid.</p>
+
+            // Compile all answers into a single solution
+            const need = formData.get('need').toLowerCase();
+            const want = formData.get('want').toLowerCase();
+            const fear = formData.get('fear').toLowerCase();
+            const past = formData.get('past').toLowerCase();
+            const outcome = formData.get('outcome').toLowerCase();
+
+            // Simple logic to recommend a product based on keywords (simulating AI)
+            let recommendedProduct = 'Quantum Pyramid';
+            let recommendationReason = `
+                We recommend the <strong>Quantum Pyramid</strong> as your comprehensive solution. 
+                Crafted with monoatomic gold, colloidal silver, and nascent iodine, this pyramid harnesses quantum and life force energy to create a harmonious environment that aligns your energy systems. 
+                It addresses your needs by providing a stable energy field to support ${need}, fulfills your desire for ${want} by enhancing overall balance, mitigates ${fear} by promoting inner peace, overcomes past challenges like ${past} through its unique quantum properties, and helps achieve ${outcome} by fostering a state of ease and coherence. 
+                The Quantum Pyramid is a versatile tool that works on multiple levels to empower you holistically.
             `;
+
+            if (want.includes('wearable') || outcome.includes('portable')) {
+                recommendedProduct = 'Quantum Necklace';
+                recommendationReason = `
+                    We recommend the <strong>Quantum Necklace</strong> as your all-in-one solution. 
+                    Infused with monoatomic gold, this wearable orgonite piece channels quantum energy to align your personal energy field. 
+                    It meets your needs for ${need} by providing constant energy support, satisfies your desire for ${want} with its stylish and portable design, alleviates ${fear} by fostering confidence and calm, surpasses previous attempts like ${past} with its quantum coherence, and delivers ${outcome} by keeping you connected to balanced energy throughout the day. 
+                    The Quantum Necklace is perfect for continuous, on-the-go energy alignment.
+                `;
+            } else if (need.includes('meditation') || outcome.includes('focus')) {
+                recommendedProduct = 'Quantum Wand';
+                recommendationReason = `
+                    We recommend the <strong>Quantum Wand</strong> as your tailored solution. 
+                    Designed with colloidal silver and nascent iodine, this handheld tool channels life force energy to enhance meditation and focus. 
+                    It fulfills your need for ${need} by deepening your practice, supports your desire for ${want} by sharpening mental clarity, dispels ${fear} by grounding your energy, improves upon past experiences like ${past} with its quantum approach, and achieves ${outcome} by empowering you to harness prana effectively. 
+                    The Quantum Wand is ideal for intentional energy work and personal growth.
+                `;
+            }
+
+            resultDiv.innerHTML = recommendationReason;
         });
     </script>
 </body>
