@@ -112,7 +112,7 @@
         <!-- Intro Video -->
         <div class="intro-video">
             <h2>Welcome to Quantum Orgonite</h2>
-            <iframe width="560" height="315" src="https://m.youtube.com/watch?v=9nD1s4VPKk8" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9nD1s4VPKk8" frameborder="0" allowfullscreen></iframe>
             <p>Discover the power of anandamide, the bliss molecule, and our quantum orgonite products.</p>
         </div>
 
@@ -391,7 +391,7 @@
             });
         });
 
-        // Guidance Form AI Simulation
+        // Guidance istoForm AI Simulation
         document.getElementById('guidance-form').addEventListener('submit', (e) => {
             e.preventDefault();
             const formData = new FormData(e.target);
