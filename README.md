@@ -115,12 +115,12 @@
       <button class="accordion-header">Reference Material</button>
       <div class="accordion-content">
         <p>Example reference materials...</p>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" 
-                title="Reference Video 1" 
+        <iframe src="https://m.youtube.com/watch?v=KN3PBFxV3Xw&t=10s&pp=ygUPV2hhdHMgaW4gYSBkcm9w" 
+                title="Whats is a Drop? We are water so what is the unconscious effect of vibrations on us." 
                 frameborder="0" 
                 allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" 
-                title="Reference Video 2" 
+        <iframe src="https://m.youtube.com/watch?v=R8VyUsVOic0&pp=ygUVTm9iZWwgcHJvemUgZG5hIHdhdGVy" 
+                title="Water Memory. Here a Nobel prize laureate measures the emf of extremely diluted water that once touched a strand of hiv infected dna and sends the audio to germany where they play the recording for a vial of water that contains 4 amino acids and one rna for an hour and the exact strand of infected dna is replicated exactly. We can do this with stem cells , cures, preventions, anything " 
                 frameborder="0" 
                 allowfullscreen></iframe>
       </div>
