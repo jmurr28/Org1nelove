@@ -115,6 +115,14 @@
       <button class="accordion-header">Reference Material</button>
       <div class="accordion-content">
         <p>Example reference materials...</p>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" 
+                title="Reference Video 1" 
+                frameborder="0" 
+                allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" 
+                title="Reference Video 2" 
+                frameborder="0" 
+                allowfullscreen></iframe>
       </div>
     </div>
 
